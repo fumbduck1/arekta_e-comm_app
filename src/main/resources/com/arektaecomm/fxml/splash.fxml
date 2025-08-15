@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.arektaecomm.controller.SplashController"
+           prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600"
+           styleClass="root">
+    <VBox alignment="CENTER" spacing="24" styleClass="card">
+        <ImageView fx:id="splashImage" fitWidth="300" fitHeight="300" preserveRatio="true"/>
+        <Label fx:id="projectNameLabel" text="Arekta E-Commerce App" styleClass="heading"/>
+        <Label fx:id="loadingLabel" text="Loading..." styleClass="empty-label"/>
+    </VBox>
+</StackPane>

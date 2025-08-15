@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox spacing="16" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arektaecomm.controller.CartController"
+      prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600">
+  <Button text="⬅️ Back" style="-fx-font-size: 18;" onAction="#onBack" />
+  <Label text="🛒" style="-fx-font-size: 40;"/>
+  <Label text="Your Cart" styleClass="heading"/>
+  <Label fx:id="emptyCartLabel" text="Your cart is empty." visible="false"
+    styleClass="empty-label" />
+  <ListView fx:id="cartList" prefHeight="400"/>
+  <HBox spacing="24" alignment="CENTER_RIGHT">
+    <Label fx:id="totalLabel" style="-fx-font-size:20; -fx-font-weight:bold;"/>
+    <Button fx:id="checkoutBtn" text="Checkout" onAction="#onCheckout" styleClass="main-btn">
+      <tooltip><Tooltip text="Proceed to checkout"/></tooltip>
+    </Button>
+  </HBox>
+</VBox>

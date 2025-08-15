@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleGroup?>
+<VBox spacing="16" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arektaecomm.controller.CheckoutController"
+      prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600">
+    <fx:define>
+        <ToggleGroup fx:id="paymentGroup"/>
+    </fx:define>
+    <Button text="⬅️ Back" style="-fx-font-size: 18;" onAction="#onBack" />
+    <Label text="&#xE7BF;" style="-fx-font-family: 'Segoe MDL2 Assets'; -fx-font-size: 32;"/>
+    <Label text="Choose Payment Method" styleClass="heading"/>
+    <Label text="(Note: Payment is simulated. No real transaction will occur.)" styleClass="empty-label"/>
+    <RadioButton fx:id="ccOption" text="Credit Card" toggleGroup="$paymentGroup"/>
+    <RadioButton fx:id="ppOption" text="Paypal" toggleGroup="$paymentGroup"/>
+    <RadioButton fx:id="codOption" text="Cash on Delivery" toggleGroup="$paymentGroup"/>
+    <Label fx:id="paymentWarningLabel" text="Please select a payment method." visible="false" style="-fx-text-fill: #d9534f; -fx-font-size: 14;" />
+    <Button fx:id="payBtn" text="Pay Now" onAction="#onPay" styleClass="button">
+        <tooltip><Tooltip text="Pay Now"/></tooltip>
+    </Button>
+</VBox>

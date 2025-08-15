@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<VBox spacing="16" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arektaecomm.controller.OrdersController"
+      prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600">
+    <Label text="Order History" styleClass="heading"/>
+    <ListView fx:id="ordersList" prefHeight="300" prefWidth="400"/>
+    <Label fx:id="emptyOrdersLabel" text="No orders found." visible="false" style="-fx-text-fill: #888; -fx-font-size: 16;" />
+    <Button text="⬅️ Back" style="-fx-font-size: 18;" onAction="#onBack" />
+</VBox>

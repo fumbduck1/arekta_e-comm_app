@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.arektaecomm.controller.HomeController"
+            prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600">
+  <top>
+    <ToolBar style="-fx-padding: 8 16;">
+      <Label text="Arekta E-Commerce App" styleClass="heading"/>
+      <Pane style="-fx-pref-width: 0;" />
+    </ToolBar>
+  </top>
+  <center>
+    <ScrollPane fitToWidth="true" fitToHeight="true">
+      <VBox spacing="24" alignment="TOP_CENTER" fillWidth="true">
+        <HBox spacing="8" alignment="CENTER">
+    <HBox fx:id="carouselBox" alignment="CENTER" spacing="0" style="-fx-padding: 0 0 24 0;" minHeight="220" />
+
+        </HBox>
+        <Label text="Featured Products" styleClass="section-title"/>
+        <FlowPane fx:id="productGrid" hgap="24" vgap="24" alignment="CENTER" prefWrapLength="900"/>
+        <Label fx:id="emptyLabel" text="No products available. Please check back later." visible="false" styleClass="empty-label"/>
+      </VBox>
+    </ScrollPane>
+  </center>
+  <bottom>
+    <StackPane style="-fx-padding: 12; -fx-background-color: #f5f6fa;">
+      <HBox spacing="25" alignment="CENTER">
+  <Button text="🏠" style="-fx-font-size: 24;">
+          <tooltip><Tooltip text="Home"/></tooltip>
+        </Button>
+        <Button text="🛒" style="-fx-font-size: 24;" onAction="#onCart">
+          <tooltip><Tooltip text="Cart"/></tooltip>
+        </Button>
+        <Button text="📦" style="-fx-font-size: 24;" onAction="#onOrders">
+          <tooltip><Tooltip text="Orders"/></tooltip>
+        </Button>
+        <Button text="👤" style="-fx-font-size: 24;" onAction="#onProfile">
+          <tooltip><Tooltip text="Profile"/></tooltip>
+        </Button>
+      </HBox>
+    </StackPane>
+  </bottom>
+</BorderPane>

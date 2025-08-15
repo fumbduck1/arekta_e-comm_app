@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           style="-fx-background-radius: 18; -fx-background-color: #ffcccc; -fx-padding: 0;" minHeight="220" maxHeight="220">
+    <ImageView fx:id="campaignImage" fitWidth="700" fitHeight="220" preserveRatio="true"
+               style="-fx-effect: dropshadow(gaussian, #888, 10, 0.5, 0, 2); -fx-background-radius: 18;" />
+    <Hyperlink fx:id="campaignLink" text="Learn More" style="-fx-font-size: 16; -fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 8; -fx-padding: 6 18;"
+               StackPane.alignment="BOTTOM_RIGHT" />
+</StackPane>

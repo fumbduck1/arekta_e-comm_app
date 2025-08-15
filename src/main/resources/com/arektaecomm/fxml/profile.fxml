@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<VBox spacing="16" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arektaecomm.controller.ProfileController"
+      prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600">
+    <ImageView fx:id="profileImageView" fitWidth="140" fitHeight="140" />
+    <HBox spacing="8" alignment="CENTER">
+        <TextField fx:id="imgUrlField" promptText="Paste image URL here" prefWidth="300"/>
+        <Button text="Update Image" onAction="#onUpdateImage"/>
+        <Button text="Crop Image" onAction="#onCropImage"/>
+    </HBox>
+    
+    <Label text="Profile" styleClass="heading"/>
+    <Label fx:id="emailLabel" text="Email: " styleClass="section-title"/>
+    <TextField fx:id="nameField" promptText="Full Name" maxWidth="320"/>
+    <TextField fx:id="phoneField" promptText="Phone Number" maxWidth="320"/>
+    <TextField fx:id="billingAddressField" promptText="Billing Address" maxWidth="320"/>
+    <TextField fx:id="mailingAddressField" promptText="Mailing Address" maxWidth="320"/>
+    <Button text="Update Profile" onAction="#onUpdateProfile"/>
+    <HBox spacing="12" alignment="CENTER">
+        <Button text="Logout" onAction="#onLogout" styleClass="main-btn"/>
+        <Button text="⬅️ Back" style="-fx-font-size: 18;" onAction="#onBack" />
+    </HBox>
+</VBox>

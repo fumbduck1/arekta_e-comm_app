@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:id="rootCard" spacing="8" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arektaecomm.controller.ProductCardController">
+    <ImageView fx:id="imgView" fitWidth="100" fitHeight="100"/>
+    <Label fx:id="nameLabel" styleClass="section-title"/>
+    <Label fx:id="priceLabel"/>
+    <Label fx:id="statusLabel" visible="false"/>
+    <Button text="➕ Add to Cart" onAction="#onAddToCart"/>
+</VBox>

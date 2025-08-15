@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="16" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.arektaecomm.controller.ProductDetailsController"
+      prefWidth="1000" prefHeight="700" minWidth="900" minHeight="600"
+      style="-fx-padding: 32;">
+    <ImageView fx:id="imgView" fitWidth="180" fitHeight="180"/>
+    <Label fx:id="nameLabel" styleClass="heading"/>
+    <Label fx:id="priceLabel" styleClass="section-title"/>
+    <Label fx:id="stockLabel" style="-fx-font-size: 15;"/>
+    <Label fx:id="descLabel" wrapText="true" style="-fx-font-size: 15; -fx-text-fill: #444;"/>
+    <Button text="➕ Add to Cart" onAction="#onAddToCart" styleClass="icon-btn"/>
+    <Button text="⬅️ Back" onAction="#onBack"/>
+</VBox>
