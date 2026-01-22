@@ -11,5 +11,5 @@ JavaFX e-commerce demo using Firebase.
 3. Build and run with Maven.
 
 ## Notes
-- Secrets and generated files are git-ignored.
+
 - Invoices are saved to `invoices/` (ignored by git).
