@@ -30,3 +30,5 @@ serviceAccountkey.json
 src/main/resources/serviceAccountKey.json
 src/main/resources/serviceAccountkey.json
 src/main/resources/config.properties
+firebase-rules.json
+PLAN.md
